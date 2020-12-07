@@ -1,5 +1,5 @@
 # NDN-multicast
-This project consist of three parts: Wireless, NDN, SVC-player.
+This project consists of three parts: Wireless, NDN, SVC-player.
 # Wireless
 We modified linux source so that it is possible to set multicast rate.
 # NDN
