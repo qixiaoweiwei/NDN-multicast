@@ -1,0 +1,22 @@
+Dependency:
+  To compile OpenSVCDecoder, you will need SDL, which won't actually be used. To compile the player, you will need SDL2 and SDL2-image, which will be used.
+  On ubuntu 20.04:
+    sudo apt install libsdl1.2-dev libsdl2-dev libsdl2-image-dev cmake
+
+First you have to compile and install OpenSVCDecoder:
+  cd OpenSVCDecoder
+  mkdir build
+  cd build
+  cmake ..
+  make  
+  sudo cp ./libOpenSVCDecoder.so /usr/lib/libOpenSVCDecoder.so
+
+
+You can compile and run "demo.cxx":
+   g++ demo.cxx merge.cxx player.c -L. -lOpenSVCDecoder -lSDL2 -o demo
+   cp ./demo ./video_example/demo
+   cd video_example
+   ./demo
+   
+
+
