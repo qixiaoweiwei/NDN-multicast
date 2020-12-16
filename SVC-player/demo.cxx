@@ -34,13 +34,13 @@ int main(int argc, char* args[])
       decode(h264_file, out_file, 1, 48);
   }
   
-  SDL_Renderer* renderer = init();
-  play_segment(renderer, "./seg0.yuv", 1280, 720, 24, 2);
-  play_segment(renderer, "./seg1.yuv", 640, 360, 24, 2);
-  play_segment(renderer, "./seg2.yuv", 1280, 720, 24, 2);
-  play_segment(renderer, "./seg3.yuv", 640, 360, 24, 2);
-  play_segment(renderer, "./seg4.yuv", 1280, 720, 24, 2);
-  SDL_Quit();
+  player_init();
+  play_segment("./seg0.yuv", 1280, 720, 24, 2);
+  play_segment("./seg1.yuv", 640, 360, 24, 2);
+  play_segment("./seg2.yuv", 1280, 720, 24, 2);
+  play_segment("./seg3.yuv", 640, 360, 24, 2);
+  play_segment("./seg4.yuv", 1280, 720, 24, 2);
+  player_quit();
 
   return 0;
 }

@@ -1,0 +1,10 @@
+First, you need to copy the decoder library here:
+    cp ../OpenSVCDecoder/build/libOpenSVCDecoder.so ./libOpenSVCDecoder.so
+
+
+Then, you need to compile the player library:
+    gcc player.c -lSDL2 -fPIC -shared -o libPlayer.so
+
+
+Finally, copy the video example from ../video_example here and run the demo.py:
+    python2 demo.py

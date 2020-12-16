@@ -13,7 +13,7 @@ First you have to compile and install OpenSVCDecoder:
 
 
 You can compile and run "demo.cxx":
-   g++ demo.cxx merge.cxx player.c -L. -lOpenSVCDecoder -lSDL2 -o demo
+   g++ demo.cxx merge.cxx player.c -lOpenSVCDecoder -lSDL2 -o demo
    cp ./demo ./video_example/demo
    cd video_example
    ./demo
